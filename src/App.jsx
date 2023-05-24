@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 import ThemeProviderWrapper from "./components/ThemeProviderWrapper";
@@ -15,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navigate to="/home" />,
+  },
   {
     path: "/home",
     element: <Home />,
