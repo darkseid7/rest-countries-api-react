@@ -67,7 +67,7 @@ const StyledSwitch = styled.div`
   }
 `;
 
-const SwitchThemeButton = () => {
+const SwitchTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
@@ -84,4 +84,4 @@ const SwitchThemeButton = () => {
   );
 };
 
-export default SwitchThemeButton;
+export default SwitchTheme;

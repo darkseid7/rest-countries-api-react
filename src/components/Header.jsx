@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-import SwitchThemeButton from "./styledComponents/switchThemeButton";
+import SwitchTheme from "./styledComponents/SwitchTheme";
 
-import ThemeContext from "../context/ThemeContext";
 const HeaderContainer = styled.header`
   width: 100%;
   height: 80px;
@@ -52,11 +51,7 @@ const Header = () => {
       <HeaderContainer>
         <div className="header-wrapper">
           <h1 className="logo-title">Where in the world?</h1>
-
-          {/* <button onClick={toggleTheme}>
-            {theme === "dark" ? "Dark Mode" : "Light Mode"}
-          </button> */}
-          <SwitchThemeButton />
+          <SwitchTheme />
         </div>
       </HeaderContainer>
     </>
