@@ -5,7 +5,7 @@ const FilterByRegion = styled.select`
   width: 200px;
   height: 56px;
   font-size: 14px;
-  margin: 2.5rem 0;
+  /* margin: 2.5rem 0; */
   padding: 1rem 2rem;
   font-family: "Nunito Sans";
   font-weight: 400;
@@ -14,9 +14,10 @@ const FilterByRegion = styled.select`
   color: ${({ theme }) => theme.colors.fontColor};
   background-color: ${({ theme }) => theme.colors.secondColor};
   cursor: pointer;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
 
   @media only screen and (max-width: 960px) {
-    margin: 0;
+    margin-top: 40px;
   }
 `;
 

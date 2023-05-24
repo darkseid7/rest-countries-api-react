@@ -7,10 +7,10 @@ import { StyledSpanInfo, StyledSpanValue } from "./styledComponents/Span";
 const CardItem = styled.li`
   width: 265px;
   height: 336px;
+  margin-bottom: 75px;
   background-color: ${({ theme }) => theme.colors.secondColor};
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 4rem;
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
 
   img {
@@ -30,6 +30,7 @@ const CardItem = styled.li`
   }
 
   @media only screen and (max-width: 960px) {
+    margin-bottom: 40px;
   }
 `;
 

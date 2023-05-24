@@ -12,6 +12,7 @@ const PageHome = styled.section`
   background-color: ${({ theme }) => theme.colors.bgColor};
 
   .inputs-wrapper {
+    margin-bottom: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +21,8 @@ const PageHome = styled.section`
   @media only screen and (max-width: 960px) {
     .inputs-wrapper {
       display: block;
-      padding: 0 1rem;
+      margin-bottom: 32px;
+      padding: 0 16px;
     }
   }
 `;
@@ -33,6 +35,7 @@ const CardList = styled.ul`
 
   @media only screen and (max-width: 960px) {
     justify-content: space-around;
+    margin: 0;
   }
 `;
 
